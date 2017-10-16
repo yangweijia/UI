@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="game" default="run-tests" basedir=".">
+ <property name="src" value="${basedir}/src/test"/>
+ <property name="build" value="${basedir}/build"/>
+ <property name="lib.dir" value="${basedir}/lib"/>
+ 
+ <path id="classpath1.path">
+  <fileset dir="${lib.dir}">
+   <include name="*.jar"/>
+  </fileset>
+  <pathelement location="${src}"/>
+  <pathelement location="${build}"/>
+ </path>
+ 
+ <target name="clean">
+  <delete verbose="true">
+   <fileset dir="${build}">
+    <include name="**/*"/>
+   </fileset>      
+  </delete>                       
+ </target>
+ 
+ <target name="compile" depends="clean">    
+  <javac srcdir="${src}" destdir="${build}" includeAntRuntime="no" debug="off" classpathref="classpath1.path" >
+   <compilerarg line="-encoding UTF-8"></compilerarg>
+  </javac>
+ </target>
+ 
+ <taskdef resource="testngtasks" classpath="${lib.dir}/testng-6.10.jar"/>
+ <target name="run-tests" depends="compile" description="runtests">
+  <echo>running test</echo>
+  <testng classpathref="classpath1.path" outputdir="${basedir}/test-output" delegateCommandSystemProperties="true">
+   <xmlfileset dir="." includes="testng.xml"/>                        
+  </testng>
+ </target>
+ 
+</project>

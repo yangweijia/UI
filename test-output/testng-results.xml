@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test" duration-ms="21839" started-at="2017-10-16T07:16:33Z" finished-at="2017-10-16T07:16:55Z">
+    <groups>
+    </groups>
+    <test name="login test" duration-ms="21839" started-at="2017-10-16T07:16:33Z" finished-at="2017-10-16T07:16:55Z">
+      <class name="test.NewTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.NewTest@1ef7fe8e]" name="setup" is-config="true" duration-ms="3312" started-at="2017-10-16T15:16:33Z" finished-at="2017-10-16T15:16:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login001()[pri:0, instance:test.NewTest@1ef7fe8e]" name="login001" duration-ms="10237" started-at="2017-10-16T15:16:36Z" finished-at="2017-10-16T15:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login001 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.NewTest@1ef7fe8e]" name="teardown" is-config="true" duration-ms="155" started-at="2017-10-16T15:16:47Z" finished-at="2017-10-16T15:16:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.NewTest@1ef7fe8e]" name="setup" is-config="true" duration-ms="2424" started-at="2017-10-16T15:16:47Z" finished-at="2017-10-16T15:16:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login002()[pri:0, instance:test.NewTest@1ef7fe8e]" name="login002" duration-ms="5556" started-at="2017-10-16T15:16:49Z" finished-at="2017-10-16T15:16:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login002 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:test.NewTest@1ef7fe8e]" name="teardown" is-config="true" duration-ms="139" started-at="2017-10-16T15:16:55Z" finished-at="2017-10-16T15:16:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test.NewTest -->
+    </test> <!-- login test -->
+  </suite> <!-- test -->
+</testng-results>
