@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="game" default="run-tests" basedir=".">
- <property name="src" value="${basedir}/src/test"/>
+ <property name="src" value="${basedir}/src"/>
  <property name="build" value="${basedir}/build"/>
  <property name="lib.dir" value="${basedir}/lib"/>
  

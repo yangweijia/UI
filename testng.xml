@@ -2,7 +2,7 @@
 <suite name="test" parallel="classes" thread-count="3" verbose="10">
  <test name="login test">
   <classes>
-   <class name="test.NewTest">
+   <class name="test_case.LoginCase">
    </class>
   </classes>
  </test>
