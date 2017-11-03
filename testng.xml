@@ -2,8 +2,8 @@
 <suite name="test" parallel="classes" thread-count="3" verbose="10">
  <test name="login test">
   <classes>
-   <class name="test_case.LoginCase">
-   </class>
+   <class name="test_case.GoodsManageCase"></class>
+   <class name="test_case.LoginCase"></class>
   </classes>
  </test>
 </suite>

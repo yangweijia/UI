@@ -3,13 +3,14 @@
 <suite thread-count="3" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [test]" parallel="classes">
   <test name="login test(failed)" parallel="classes">
     <classes>
-      <class name="test.NewTest">
+      <class name="test_case.GoodsManageCase">
         <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="login001"/>
+          <include name="tearDown"/>
+          <include name="f"/>
+          <include name="clear"/>
+          <include name="init"/>
         </methods>
-      </class> <!-- test.NewTest -->
+      </class> <!-- test_case.GoodsManageCase -->
     </classes>
   </test> <!-- login test(failed) -->
 </suite> <!-- Failed suite [test] -->

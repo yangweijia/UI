@@ -1,6 +1,6 @@
 package page_obj;
 
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class LoginPage extends Page{
 	//定位
@@ -8,7 +8,7 @@ public class LoginPage extends Page{
 	public  static final String[] passwordLoc= {"name","login[pwd]"};
 	public  static final String[] submitLoc= {"css","button.llv-submit"};
 	//构造函数		
-	public LoginPage(WebDriver selenium_diver) {
+	public LoginPage(RemoteWebDriver selenium_diver) {
 		super(selenium_diver);//调用父类构造方法
 	}
 	
@@ -28,6 +28,14 @@ public class LoginPage extends Page{
 	//点击登录按钮
 	public void submit() {
 		this.findE(submitLoc[0], submitLoc[1]).click();
+	}
+	
+	//登录
+	public void login(String user,String pwd) throws InterruptedException {
+		this.user(user);
+		this.password(pwd);
+		this.submit();	
+		Thread.sleep(2000);
 	}
 	
 

@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +14,7 @@ import org.testng.annotations.Test;
 import page_obj.LoginPage;
 
 public class LoginCase {
-	  public WebDriver driver;
+	  public RemoteWebDriver driver;
 	  
 	  @BeforeClass
 	  public void init() {
@@ -37,6 +39,10 @@ public class LoginCase {
 	  @AfterMethod
 	  public void tearDown() {
 		  driver.navigate().refresh();// 刷新浏览器
+	  }
+	  @AfterClass
+	  public void clear() {
+		  driver.quit();
 	  }
 
 }

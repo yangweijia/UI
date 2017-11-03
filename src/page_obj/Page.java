@@ -3,11 +3,12 @@ package page_obj;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class Page {
-	WebDriver driver;
+	RemoteWebDriver driver;
 	
-	Page(WebDriver selenium_diver){
+	Page(RemoteWebDriver selenium_diver){
 		driver=selenium_diver;	
 	}
 	
